@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(153, 224, 46);
+}
+
+.container{
+    background: #fff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgb(55, 87, 6);
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input{
+      padding: 5px;
+      width: 70%;
+      border: none;
+      outline:  none;
+      border-bottom: 2px solid rgb(120, 194, 9);
+      border-left: 2px solid rgb(120, 194, 9);
+      border-radius: 0 0 0 10px;
+      text-indent: 10px;
+}
+
+.search-box  button{
+    padding: 15px 0;
+    width: 25%;
+    background: rgb(166, 227, 75);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgb(90, 145, 7);
+}
+
+.result{
+    position: relative;
+}
+
+.result h3{
+    font-size: 30px;
+    color: rgb(42, 46, 36);
+}
+
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button{
+    background: transparent;
+    border: none;
+    color: rgb(34, 39, 28)
+}
+
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: rgb(33, 36, 29);
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning{
+    color: rgb(27, 28, 25);
+    font-style: italic;
+}
+
+.word-example{
+    color: black;
+    font-style: italic;
+    border-left: 3px solid rgb(70, 109, 11);
+    margin-top: 30px;
+    padding-left: 15px;
+}
