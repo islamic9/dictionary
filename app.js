@@ -27,10 +27,13 @@ btn.addEventListener("click", () => {
                 <p class="word-meaning">${data[0].meanings[0].definitions[0].definition}</p>
                 <p class="word-example">${data[0].meanings[0].definitions[0].example || ""}</p>
             `;
-            sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
-        });
+            sound.setAttribute("src", `${data[0].phonetics[0].audio}`); 
+        })
+        .catch(() => {
+            result.innerHTML = `<h2 class="error">couldn't find the word<h2>`;
+        })
     })
-
+    
     function playSound(){
         sound.play();
     }
